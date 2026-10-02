@@ -16,6 +16,7 @@ Powered by [VoxCPM2](https://github.com/OpenBMB/VoxCPM) (Apache-2.0, Burmese sup
 ```bash
 pip install -r requirements.txt
 export TELEGRAM_BOT_TOKEN="...from @BotFather..."
+export GEMINI_API_KEY="...from Google AI Studio (for Gemini Voice)..."
 python bot.py
 ```
 
@@ -23,8 +24,14 @@ python bot.py
 
 1. Push this repo to GitHub.
 2. Railway → New Project → Deploy from GitHub repo.
-3. Add variable `TELEGRAM_BOT_TOKEN`.
+3. Add variables: `TELEGRAM_BOT_TOKEN` (required), `GEMINI_API_KEY` (for Gemini Voice).
 4. Deploy — the bot uses long polling, no webhook needed.
+
+## Voices
+
+- `/voice` shows engine buttons: 🎙️ Clone Voice (VoxCPM2, clones a voice, 1-3 min)
+  or ⚡ Gemini Voice (Google TTS, seconds, stock voices: Charon, Fenrir, Orus,
+  Puck, Kore, Aoede — default Charon).
 
 ## Notes
 
